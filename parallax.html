@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
   <title>Blerdy Womanist</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="dist/css/bootstrap.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale-1.0">
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="dist/js/bootstrap.min.js"></script>
+  <script src="parallax.js"></script>
 </head>
 <body>
+
+<div id="mySidemenu" class="sidemenu">
+  <a href="javascript:void(0)" class="close" onclick="closeSM()">&times;</a>
+  <div class="sm-wrapper">
+    <a href="#">HOME</a>
+    <a href="#">ABOUT</a>
+    <a href="#">BLOG</a>
+    <a href="#">CONTACT</a>
+  </div>
+</div>
+<div id="pg-content">
+  <div style="font-size:50px; cursor:pointer; color: #111" onclick="openSM()">&#9776;</div>
+</div>
+
+
   <div class="bwimg1">
     <div class="bwtext1">
       <span class="border"></span>
@@ -22,7 +44,7 @@
 <div class="bwimg2">
   <div class="bwtext2">
     <span class="border"></span>
-    Lastest News
+    Lastest Blog Post
   </div>
 </div>
 
