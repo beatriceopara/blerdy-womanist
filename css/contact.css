@@ -1,0 +1,141 @@
+body, html{
+  height:100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Abel', 'Helevatica','Arial', sans-serif;
+  font-weight: 400;
+  line-height: 1.8em;
+  color:#282e43;
+  min-height: 100%;
+}
+
+.sm-wrapper{
+  margin-top:100px;
+}
+
+.sidemenu{
+  height: 100%;
+  width: 0;
+  position:fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.7) !important;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: 'Abel', 'Helevatica','Arial', sans-serif;
+}
+
+.sidemenu a{
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 45px;
+  color: #ffffff;
+  display: block;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.sidemenu .close{
+  position: absolute;
+  top: 0;
+  right: 25px;
+  margin-left: 50px;
+}
+
+.sm-wrapper a:after{
+  z-index:-1;
+  position: absolute;
+  left: 0%;
+  width: 0;
+  height: 50px;
+  background: blue;
+  content: '';
+  transition: width 0.35s ease-in-out;
+}
+
+.sm-wrapper a:hover:after{
+  width:10%;
+}
+
+.sm-wrapper a:hover{
+  padding-left: 64px;
+  transition: 0.35s ease-in-out;
+}
+
+
+#pg-content{
+  transition: margin-left 0.5s;
+  padding: 16px;
+  background-image: url('../images/image_1.jpg');
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.wrapper{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+input[type=text], textarea{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: none;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.bwimg1{
+  background-image:url('../images/image_1.jpg');
+  min-height: 100%;
+}
+
+.bwimg1{
+  position: relative;
+  opacity: 0.70;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.bwtext1{
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  color: #282e43;
+  font-size: 60px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
